@@ -92,6 +92,15 @@ public class Body extends JPanel{
 	public DefaultTableModel getTable_model() {
 		return table_model;
 	}
+
+	public JLayeredPane getListSach() {
+		return listSach;
+	}
+
+	public void setListSach(JLayeredPane listSach) {
+		this.listSach = listSach;
+	}
+	
 	
 	
 }

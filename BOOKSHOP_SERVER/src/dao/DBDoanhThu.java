@@ -21,7 +21,7 @@ public class DBDoanhThu {
 	
 	private final String SELECT_DONMUA = "SELECT donmua.MaDonMua, sach.HinhAnh, sach.Ten, khachhang.Ten, donmua.SoLuong, donmua.NgayMua\r\n"
 			+ "FROM donmua JOIN khachhang ON donmua.MaKhachHang = khachhang.MaKhachHang\r\n"
-			+ "JOIN sach ON donmua.MaSach = sach.MaSach";
+			+ "JOIN sach ON donmua.MaSach = sach.MaSach ORDER BY donmua.MaDonMua ASC";
 	private final String SELECT_TIMKIEM_DOMMUA = "SELECT donmua.MaDonMua, sach.HinhAnh, sach.Ten, khachhang.Ten, donmua.SoLuong, donmua.NgayMua\r\n"
 			+ "FROM donmua JOIN khachhang ON donmua.MaKhachHang = khachhang.MaKhachHang\r\n"
 			+ "JOIN sach ON donmua.MaSach = sach.MaSach "

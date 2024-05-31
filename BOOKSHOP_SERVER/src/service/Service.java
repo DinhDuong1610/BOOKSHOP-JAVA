@@ -183,7 +183,7 @@ public class Service {
     	            }
     	            JSONObject json2 = new JSONObject();
     	            json2.put("type", "listSach");
-    	            json2.put("jsonArray", jsonArray);
+    	            json2.put("jsonArray", jsonArray2);
 	            	broadcast(client.getUserId(), json2);
     	    	}
 

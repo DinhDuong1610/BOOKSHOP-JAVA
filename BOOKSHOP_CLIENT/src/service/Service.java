@@ -87,6 +87,7 @@ public class Service {
 	    		main.getLogin().checkLogin(jsonData.getBoolean("check"));
 	    	}
 	    	else if(jsonData.getString("type").equals("listSach")) {
+	    		main.getBody().getListSach().removeAll();
 	    		JSONArray jsonArray = jsonData.getJSONArray("jsonArray");
 	            for (int i = 0; i < jsonArray.length(); i++) {
 	                JSONObject json = jsonArray.getJSONObject(i);
